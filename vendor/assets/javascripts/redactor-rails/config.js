@@ -7,10 +7,9 @@ window.init_redactor = function(){
   }
   $('.redactor').redactor(
     { "imageUpload":"/redactor_rails/pictures",
-      "uploadImageFields": params,
-      "imageGetJson":"/redactor_rails/pictures",
-      "path":"/assets/redactor-rails",
-      "css":"style.css"}
+      "imageUploadFields": params,
+      "fileUpload":"/redactor_rails/documents",
+      "fileUploadFields": params }
   );
 }
 
