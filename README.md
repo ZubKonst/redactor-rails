@@ -3,7 +3,15 @@
 
 The redactor-rails gem integrates the [Redactor](http://redactorjs.com/) editor with the Rails 3.2 asset pipeline.
 
-This gem bundles Redactor version 10.0.4 which is the most recent version as of January 9, 2015. Check [Redactor's changelog](http://imperavi.com/redactor/log/) for further updates.
+In order to use this gem, you must purchase a license from Imperavi 
+(https://imperavi.com/redactor/buy), download Redactor II files from them, 
+and place redactor.js file in the following location:
+
+    `app/assets/javascripts/`
+    
+And redactor.css file in the following location:
+
+    `app/assets/stylesheets/`
 
 ## Installation
 
@@ -51,10 +59,11 @@ Or install it yourself as:
 Add to your `application.js`:
 
       //= require redactor-rails
+      //= require redactor
 
 Add to your `application.css`:
 
-      *= require redactor-rails
+      *= require redactor
 
 ### Initialize Redactor
 
